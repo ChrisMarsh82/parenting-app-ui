@@ -1306,65 +1306,89 @@ export const ASSETS_CONTENTS_LIST = {
     size_kb: 0.9,
     md5Checksum: "b2baf969abbe27383327d1d82f6a644c",
   },
-  "plh_images/logos/funders/end_violence_against_children.png": {
-    size_kb: 21.4,
-    md5Checksum: "42a6b3a80ff26261d75ac38ccfdad863",
-  },
-  "plh_images/logos/funders/erc.png": {
-    size_kb: 63.3,
-    md5Checksum: "4cd542dfa425f700924d1b823d047573",
-  },
-  "plh_images/logos/funders/gcrf.png": {
-    size_kb: 27.2,
-    md5Checksum: "2df9eff2c10512be23db96dda5f8b712",
-  },
-  "plh_images/logos/funders/generali_human_safety_net.png": {
-    size_kb: 39.7,
-    md5Checksum: "048861ee167499c5320a23786cd697f8",
-  },
-  "plh_images/logos/funders/lego_foundation.png": {
-    size_kb: 14.3,
-    md5Checksum: "7fcc41d9c3df90a74bfd0e05e8acc4e5",
-  },
-  "plh_images/logos/funders/newton_fund.png": {
-    size_kb: 14.3,
-    md5Checksum: "97c52b2da9fc03641461ce8aa0174f36",
-  },
-  "plh_images/logos/funders/oak_foundation.png": {
-    size_kb: 21.7,
-    md5Checksum: "33c25310845e91c8b6034ee6c9113682",
-  },
-  "plh_images/logos/funders/ukri.png": {
-    size_kb: 17,
-    md5Checksum: "a4122de03ae40177cd218dd37abb3b2d",
-  },
-  "plh_images/logos/funders/unicef.png": {
-    size_kb: 23.6,
-    md5Checksum: "c5262d757c340125cc601c3dc368f37c",
-  },
-  "plh_images/logos/funders/university_of_oxford.png": {
-    size_kb: 42,
-    md5Checksum: "a738b0e0c6d5601cac1d4ea299ee4281",
-  },
-  "plh_images/logos/partners/cwb.png": {
+  "plh_images/logos/cwb.png": {
     size_kb: 28.3,
     md5Checksum: "4813caff2be00e158e6f0d3fec5df6a2",
   },
-  "plh_images/logos/partners/idems.png": {
+  "plh_images/logos/erc.png": {
+    size_kb: 63.3,
+    md5Checksum: "4cd542dfa425f700924d1b823d047573",
+  },
+  "plh_images/logos/gcrf.png": {
+    size_kb: 27.2,
+    md5Checksum: "2df9eff2c10512be23db96dda5f8b712",
+  },
+  "plh_images/logos/gisp.png": {
+    size_kb: 34.3,
+    md5Checksum: "5ce0882cda6ff387f3bb664d9cb75a1d",
+  },
+  "plh_images/logos/ics.png": {
+    size_kb: 317.2,
+    md5Checksum: "99446a9409eafa3ee111b9c6b7f650d5",
+  },
+  "plh_images/logos/idems.png": {
     size_kb: 17.3,
     md5Checksum: "963f0b32ea26bd9fdfddf47f0d42f340",
   },
-  "plh_images/logos/partners/plh.png": {
+  "plh_images/logos/lego_foundation.png": {
+    size_kb: 14.3,
+    md5Checksum: "7fcc41d9c3df90a74bfd0e05e8acc4e5",
+  },
+  "plh_images/logos/nimr.png": {
+    size_kb: 287.4,
+    md5Checksum: "fd69a0b61a447efcae27cbaa0f74d79f",
+  },
+  "plh_images/logos/oak_foundation.png": {
+    size_kb: 21.7,
+    md5Checksum: "33c25310845e91c8b6034ee6c9113682",
+  },
+  "plh_images/logos/old/end_violence_against_children.png": {
+    size_kb: 21.4,
+    md5Checksum: "42a6b3a80ff26261d75ac38ccfdad863",
+  },
+  "plh_images/logos/old/generali_human_safety_net.png": {
+    size_kb: 39.7,
+    md5Checksum: "048861ee167499c5320a23786cd697f8",
+  },
+  "plh_images/logos/old/newton_fund.png": {
+    size_kb: 14.3,
+    md5Checksum: "97c52b2da9fc03641461ce8aa0174f36",
+  },
+  "plh_images/logos/plh.png": {
     size_kb: 66.5,
     md5Checksum: "4cc18480bb1e712fa397cbe2ff130021",
   },
-  "plh_images/logos/partners/unicef.png": {
-    size_kb: 29.9,
-    md5Checksum: "0c9fb229c82fd604b1ad9b23a64804e8",
+  "plh_images/logos/tz_government.png": {
+    size_kb: 416.1,
+    md5Checksum: "c32f205f332c4f9f10b6a256d1ea873a",
   },
-  "plh_images/logos/partners/who.png": {
+  "plh_images/logos/uct.png": {
+    size_kb: 283.7,
+    md5Checksum: "1f2656a3271ef01c5e04a8460bf9e841",
+  },
+  "plh_images/logos/ukri.png": {
+    size_kb: 17,
+    md5Checksum: "a4122de03ae40177cd218dd37abb3b2d",
+  },
+  "plh_images/logos/unicef.png": {
+    size_kb: 23.6,
+    md5Checksum: "c5262d757c340125cc601c3dc368f37c",
+  },
+  "plh_images/logos/university_of_oxford.png": {
+    size_kb: 42,
+    md5Checksum: "a738b0e0c6d5601cac1d4ea299ee4281",
+  },
+  "plh_images/logos/usaid.png": {
+    size_kb: 38.3,
+    md5Checksum: "fc3fbd8224a815dd75f89348fbf79dba",
+  },
+  "plh_images/logos/who.png": {
     size_kb: 42.9,
     md5Checksum: "f05f8934b9b7f5565c2d9a589086de96",
+  },
+  "plh_images/logos/za_dsd.png": {
+    size_kb: 80.9,
+    md5Checksum: "8a4c8ce58e2fe176318107ce599277ec",
   },
   "plh_images/parent_centre/ask.svg": {
     size_kb: 1,
