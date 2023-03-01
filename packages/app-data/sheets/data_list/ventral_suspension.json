@@ -1,6 +1,6 @@
 {
   "flow_type": "data_list",
-  "flow_name": "ventral_suspension ",
+  "flow_name": "ventral_suspension",
   "status": "released",
   "rows": [],
   "_xlsxPath": "data_lists/baib_components.xlsx"
