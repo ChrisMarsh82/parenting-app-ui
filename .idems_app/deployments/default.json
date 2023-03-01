@@ -1,8 +1,8 @@
 {
-  "name": "wash",
+  "name": "perinatal",
   "google_drive": {
-    "assets_folder_id": "1hebyXSR-rkpYLH_No2QTvCQiYfbh1RE9",
-    "sheets_folder_id": "1AQqtRLoNuhbHP3KPzzQqzZcjdttT0rr8",
+    "assets_folder_id": "1sqW2TdYXALIlvBnWlU-XT90BpllkLrGs",
+    "sheets_folder_id": "1LyMSXxi0FN5iAZQL5ySLBW56jmDqVabU",
     "auth_token_path": "C:\\Users\\Esmee\\Documents\\GitHub\\parenting-app-ui\\packages\\scripts\\config\\token.json",
     "sheets_filter_function": "(gdriveEntry) => true",
     "assets_filter_function": "(gdriveEntry) => true"
@@ -19,7 +19,7 @@
       "APP_THEME": "rp-contact-field._app_theme"
     },
     "APP_HEADER_DEFAULTS": {
-      "title": "WASH App"
+      "title": "ParentApp"
     },
     "APP_INITIALISATION_DEFAULTS": {
       "app_first_launch_actions": []
@@ -47,7 +47,7 @@
     },
     "APP_SIDEMENU_DEFAULTS": {
       "enabled": true,
-      "title": "WASH App",
+      "title": "ParentApp",
       "template_name": "app_menu",
       "should_show_version": true,
       "should_show_deployment_name": false
@@ -114,8 +114,8 @@
     "FIELD_PREFIX": "rp-contact-field",
     "NOTIFICATIONS_SYNC_FREQUENCY_MS": 180000,
     "NOTIFICATION_DEFAULTS": {
-      "title": "New message from WASH App",
-      "text": "You have a new message from WASH App",
+      "title": "New message from ParentApp",
+      "text": "You have a new message from ParentApp",
       "time": {
         "hour": 12,
         "minute": 0
@@ -124,12 +124,12 @@
     "SERVER_SYNC_FREQUENCY_MS": 300000
   },
   "local_drive": {
-    "assets_path": "C:\\Users\\Esmee\\Documents\\GitHub\\parenting-app-ui\\.idems_app\\deployments\\wash\\assets",
-    "sheets_path": "C:\\Users\\Esmee\\Documents\\GitHub\\parenting-app-ui\\.idems_app\\deployments\\wash\\sheets"
+    "assets_path": "C:\\Users\\Esmee\\Documents\\GitHub\\parenting-app-ui\\.idems_app\\deployments\\perinatal\\assets",
+    "sheets_path": "C:\\Users\\Esmee\\Documents\\GitHub\\parenting-app-ui\\.idems_app\\deployments\\perinatal\\sheets"
   },
   "app_data": {
     "sheets_output_path": "C:\\Users\\Esmee\\Documents\\GitHub\\parenting-app-ui\\packages\\app-data\\sheets",
-    "converter_cache_path": "C:\\Users\\Esmee\\Documents\\GitHub\\parenting-app-ui\\.idems_app\\deployments\\wash\\cache\\converter",
+    "converter_cache_path": "C:\\Users\\Esmee\\Documents\\GitHub\\parenting-app-ui\\.idems_app\\deployments\\perinatal\\cache\\converter",
     "assets_output_path": "C:\\Users\\Esmee\\Documents\\GitHub\\parenting-app-ui\\packages\\app-data\\assets",
     "translations_output_path": "C:\\Users\\Esmee\\Documents\\GitHub\\parenting-app-ui\\packages\\app-data\\translations",
     "sheets_filter_function": "(flow) => true",
@@ -137,19 +137,19 @@
   },
   "translations": {
     "filter_language_codes": null,
-    "source_strings_path": "C:\\Users\\Esmee\\Documents\\GitHub\\parenting-app-ui\\.idems_app\\deployments\\wash\\app_data\\translations_source\\source_strings",
-    "translated_strings_path": "C:\\Users\\Esmee\\Documents\\GitHub\\parenting-app-ui\\.idems_app\\deployments\\wash\\app_data\\translations_source\\translated_strings",
-    "output_cache_path": "C:\\Users\\Esmee\\Documents\\GitHub\\parenting-app-ui\\.idems_app\\deployments\\wash\\cache\\translations"
+    "source_strings_path": "C:\\Users\\Esmee\\Documents\\GitHub\\parenting-app-ui\\.idems_app\\deployments\\perinatal\\app_data\\translations_source\\source_strings",
+    "translated_strings_path": "C:\\Users\\Esmee\\Documents\\GitHub\\parenting-app-ui\\.idems_app\\deployments\\perinatal\\app_data\\translations_source\\translated_strings",
+    "output_cache_path": "C:\\Users\\Esmee\\Documents\\GitHub\\parenting-app-ui\\.idems_app\\deployments\\perinatal\\cache\\translations"
   },
   "workflows": {
     "custom_ts_files": [],
-    "task_cache_path": "C:\\Users\\Esmee\\Documents\\GitHub\\parenting-app-ui\\.idems_app\\deployments\\wash\\tasks"
+    "task_cache_path": "C:\\Users\\Esmee\\Documents\\GitHub\\parenting-app-ui\\.idems_app\\deployments\\perinatal\\tasks"
   },
   "_version": 1,
   "error_logging": {
-    "dsn": "https://976f6a201e1049fdb65d3f642724f0f9@app.glitchtip.com/2444"
+    "dsn": "https://d2a84a6e88b24a7199736d4d153c0a7a@app.glitchtip.com/2443"
   },
-  "_workspace_path": "C:\\Users\\Esmee\\Documents\\GitHub\\parenting-app-ui\\.idems_app\\deployments\\wash",
-  "_config_ts_path": "C:\\Users\\Esmee\\Documents\\GitHub\\parenting-app-ui\\.idems_app\\deployments\\wash\\config.ts",
+  "_workspace_path": "C:\\Users\\Esmee\\Documents\\GitHub\\parenting-app-ui\\.idems_app\\deployments\\perinatal",
+  "_config_ts_path": "C:\\Users\\Esmee\\Documents\\GitHub\\parenting-app-ui\\.idems_app\\deployments\\perinatal\\config.ts",
   "_config_version": 2
 }
