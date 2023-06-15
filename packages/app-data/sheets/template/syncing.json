@@ -1,0 +1,461 @@
+{
+  "flow_type": "template",
+  "flow_name": "syncing",
+  "status": "released",
+  "rows": [
+    {
+      "type": "title",
+      "name": "title",
+      "value": "Syncing",
+      "_translations": {
+        "value": {}
+      },
+      "_nested_name": "title"
+    },
+    {
+      "name": "user_id",
+      "value": "@calc(this.app_user_id)",
+      "_translations": {
+        "value": {}
+      },
+      "exclude_from_translation": true,
+      "type": "set_variable",
+      "_nested_name": "user_id",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@calc(this.app_user_id)",
+            "matchedExpression": "@calc(this.app_user_id)",
+            "type": "calc",
+            "fieldName": "this.app_user_id"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@calc(this.app_user_id)": [
+          "value"
+        ]
+      }
+    },
+    {
+      "name": "sync_latest",
+      "value": "@fields._server_sync_latest",
+      "_translations": {
+        "value": {}
+      },
+      "exclude_from_translation": true,
+      "type": "set_variable",
+      "_nested_name": "sync_latest",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@fields._server_sync_latest",
+            "matchedExpression": "@fields._server_sync_latest",
+            "type": "fields",
+            "fieldName": "_server_sync_latest"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@fields._server_sync_latest": [
+          "value"
+        ]
+      }
+    },
+    {
+      "name": "sync_status",
+      "exclude_from_translation": true,
+      "type": "set_variable",
+      "_nested_name": "sync_status"
+    },
+    {
+      "name": "syncing",
+      "value": "Syncing...",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "syncing"
+    },
+    {
+      "name": "sync_button_clicked",
+      "value": false,
+      "exclude_from_translation": true,
+      "type": "set_variable",
+      "_nested_name": "sync_button_clicked"
+    },
+    {
+      "name": "copy",
+      "value": "Copy",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "copy"
+    },
+    {
+      "name": "copied",
+      "value": "Copied!",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "copied"
+    },
+    {
+      "type": "qr_code",
+      "value": "@local.user_id",
+      "_translations": {
+        "value": {}
+      },
+      "condition": "@local.user_id",
+      "name": "qr_code",
+      "_nested_name": "qr_code",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@local.user_id",
+            "matchedExpression": "@local.user_id",
+            "type": "local",
+            "fieldName": "user_id"
+          }
+        ],
+        "condition": [
+          {
+            "fullExpression": "@local.user_id",
+            "matchedExpression": "@local.user_id",
+            "type": "local",
+            "fieldName": "user_id"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.user_id": [
+          "value",
+          "condition"
+        ]
+      }
+    },
+    {
+      "type": "select_text",
+      "name": "user_code",
+      "value": "@local.user_id",
+      "_translations": {
+        "value": {}
+      },
+      "condition": "@local.user_id",
+      "parameter_list": {
+        "copy_text": "@local.copy",
+        "copied_text": "@local.copied"
+      },
+      "_nested_name": "user_code",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@local.user_id",
+            "matchedExpression": "@local.user_id",
+            "type": "local",
+            "fieldName": "user_id"
+          }
+        ],
+        "condition": [
+          {
+            "fullExpression": "@local.user_id",
+            "matchedExpression": "@local.user_id",
+            "type": "local",
+            "fieldName": "user_id"
+          }
+        ],
+        "parameter_list": {
+          "copy_text": [
+            {
+              "fullExpression": "@local.copy",
+              "matchedExpression": "@local.copy",
+              "type": "local",
+              "fieldName": "copy"
+            }
+          ],
+          "copied_text": [
+            {
+              "fullExpression": "@local.copied",
+              "matchedExpression": "@local.copied",
+              "type": "local",
+              "fieldName": "copied"
+            }
+          ]
+        }
+      },
+      "_dynamicDependencies": {
+        "@local.user_id": [
+          "value",
+          "condition"
+        ],
+        "@local.copy": [
+          "parameter_list.copy_text"
+        ],
+        "@local.copied": [
+          "parameter_list.copied_text"
+        ]
+      }
+    },
+    {
+      "type": "text",
+      "name": "last_sync_text",
+      "value": "Last sync at: @local.sync_latest",
+      "_translations": {
+        "value": {}
+      },
+      "condition": "@local.sync_latest",
+      "_nested_name": "last_sync_text",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "Last sync at: @local.sync_latest",
+            "matchedExpression": "@local.sync_latest",
+            "type": "local",
+            "fieldName": "sync_latest"
+          }
+        ],
+        "condition": [
+          {
+            "fullExpression": "@local.sync_latest",
+            "matchedExpression": "@local.sync_latest",
+            "type": "local",
+            "fieldName": "sync_latest"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.sync_latest": [
+          "value",
+          "condition"
+        ]
+      }
+    },
+    {
+      "type": "text",
+      "name": "not_synced_text",
+      "value": "This device has never been synced.",
+      "_translations": {
+        "value": {}
+      },
+      "condition": "!@local.sync_latest",
+      "_nested_name": "not_synced_text",
+      "_dynamicFields": {
+        "condition": [
+          {
+            "fullExpression": "!@local.sync_latest",
+            "matchedExpression": "!@local.sync_latest",
+            "type": "local",
+            "fieldName": "sync_latest"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "!@local.sync_latest": [
+          "condition"
+        ]
+      }
+    },
+    {
+      "type": "button",
+      "name": "sync_button",
+      "value": "Sync now",
+      "_translations": {
+        "value": {}
+      },
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "set_local",
+          "args": [
+            "sync_status",
+            "@local.syncing"
+          ],
+          "_raw": "click | set_local: sync_status: @local.syncing",
+          "_cleaned": "click | set_local: sync_status: @local.syncing"
+        },
+        {
+          "trigger": "click",
+          "action_id": "set_local",
+          "args": [
+            "sync_status",
+            "@local.syncing"
+          ],
+          "_raw": "click | set_local: sync_status: @local.syncing",
+          "_cleaned": "click | set_local: sync_status: @local.syncing"
+        },
+        {
+          "trigger": "click",
+          "action_id": "emit",
+          "args": [
+            "force_reprocess"
+          ],
+          "_raw": "click | emit: force_reprocess",
+          "_cleaned": "click | emit: force_reprocess"
+        },
+        {
+          "trigger": "click",
+          "action_id": "emit",
+          "args": [
+            "server_sync"
+          ],
+          "_raw": "click | emit: server_sync",
+          "_cleaned": "click | emit: server_sync"
+        },
+        {
+          "trigger": "click",
+          "action_id": "set_local",
+          "args": [
+            "sync_status",
+            ""
+          ],
+          "_raw": "click | set_local: sync_status:",
+          "_cleaned": "click | set_local: sync_status:"
+        },
+        {
+          "trigger": "click",
+          "action_id": "set_local",
+          "args": [
+            "sync_button_clicked",
+            true
+          ],
+          "_raw": "click | set_local: sync_button_clicked: true",
+          "_cleaned": "click | set_local: sync_button_clicked: true"
+        },
+        {
+          "trigger": "click",
+          "action_id": "emit",
+          "args": [
+            "force_reprocess"
+          ],
+          "_raw": "click | emit: force_reprocess",
+          "_cleaned": "click | emit: force_reprocess"
+        }
+      ],
+      "condition": "!@local.sync_status",
+      "_nested_name": "sync_button",
+      "_dynamicFields": {
+        "action_list": {
+          "0": {
+            "args": {
+              "1": [
+                {
+                  "fullExpression": "@local.syncing",
+                  "matchedExpression": "@local.syncing",
+                  "type": "local",
+                  "fieldName": "syncing"
+                }
+              ]
+            },
+            "_raw": [
+              {
+                "fullExpression": "click | set_local: sync_status: @local.syncing",
+                "matchedExpression": "@local.syncing",
+                "type": "local",
+                "fieldName": "syncing"
+              }
+            ],
+            "_cleaned": [
+              {
+                "fullExpression": "click | set_local: sync_status: @local.syncing",
+                "matchedExpression": "@local.syncing",
+                "type": "local",
+                "fieldName": "syncing"
+              }
+            ]
+          },
+          "1": {
+            "args": {
+              "1": [
+                {
+                  "fullExpression": "@local.syncing",
+                  "matchedExpression": "@local.syncing",
+                  "type": "local",
+                  "fieldName": "syncing"
+                }
+              ]
+            },
+            "_raw": [
+              {
+                "fullExpression": "click | set_local: sync_status: @local.syncing",
+                "matchedExpression": "@local.syncing",
+                "type": "local",
+                "fieldName": "syncing"
+              }
+            ],
+            "_cleaned": [
+              {
+                "fullExpression": "click | set_local: sync_status: @local.syncing",
+                "matchedExpression": "@local.syncing",
+                "type": "local",
+                "fieldName": "syncing"
+              }
+            ]
+          }
+        },
+        "condition": [
+          {
+            "fullExpression": "!@local.sync_status",
+            "matchedExpression": "!@local.sync_status",
+            "type": "local",
+            "fieldName": "sync_status"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.syncing": [
+          "action_list.0.args.1",
+          "action_list.0._raw",
+          "action_list.0._cleaned",
+          "action_list.1.args.1",
+          "action_list.1._raw",
+          "action_list.1._cleaned"
+        ],
+        "!@local.sync_status": [
+          "condition"
+        ]
+      }
+    },
+    {
+      "type": "button",
+      "name": "sync_button_disabled",
+      "value": "@local.syncing",
+      "_translations": {
+        "value": {}
+      },
+      "condition": "@local.sync_status",
+      "parameter_list": {
+        "disabled": "true"
+      },
+      "_nested_name": "sync_button_disabled",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@local.syncing",
+            "matchedExpression": "@local.syncing",
+            "type": "local",
+            "fieldName": "syncing"
+          }
+        ],
+        "condition": [
+          {
+            "fullExpression": "@local.sync_status",
+            "matchedExpression": "@local.sync_status",
+            "type": "local",
+            "fieldName": "sync_status"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.syncing": [
+          "value"
+        ],
+        "@local.sync_status": [
+          "condition"
+        ]
+      }
+    }
+  ],
+  "_xlsxPath": "Copy of navigation.xlsx"
+}

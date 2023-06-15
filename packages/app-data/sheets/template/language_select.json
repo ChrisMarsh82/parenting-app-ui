@@ -6,26 +6,11 @@
     {
       "type": "title",
       "name": "title",
-      "value": "@global.language",
+      "value": "Language",
       "_translations": {
         "value": {}
       },
-      "_nested_name": "title",
-      "_dynamicFields": {
-        "value": [
-          {
-            "fullExpression": "@global.language",
-            "matchedExpression": "@global.language",
-            "type": "global",
-            "fieldName": "language"
-          }
-        ]
-      },
-      "_dynamicDependencies": {
-        "@global.language": [
-          "value"
-        ]
-      }
+      "_nested_name": "title"
     },
     {
       "name": "language_select_options",
@@ -135,60 +120,7 @@
           "parameter_list.answer_list"
         ]
       }
-    },
-    {
-      "type": "template",
-      "name": "nav_buttons",
-      "value": "nav_buttons",
-      "action_list": [
-        {
-          "trigger": "completed",
-          "action_id": "emit",
-          "args": [
-            "completed"
-          ],
-          "_raw": "completed | emit: completed",
-          "_cleaned": "completed | emit: completed"
-        }
-      ],
-      "rows": [
-        {
-          "name": "display_back",
-          "value": false,
-          "type": "set_variable",
-          "_nested_name": "nav_buttons.display_back"
-        },
-        {
-          "name": "button_completed",
-          "value": "@global.next_button",
-          "_translations": {
-            "value": {}
-          },
-          "type": "set_variable",
-          "_nested_name": "nav_buttons.button_completed",
-          "_dynamicFields": {
-            "value": [
-              {
-                "fullExpression": "@global.next_button",
-                "matchedExpression": "@global.next_button",
-                "type": "global",
-                "fieldName": "next_button"
-              }
-            ]
-          },
-          "_dynamicDependencies": {
-            "@global.next_button": [
-              "value"
-            ]
-          }
-        }
-      ],
-      "_nested_name": "nav_buttons"
     }
   ],
-  "_xlsxPath": "global/core_templates/core_templates_settings.xlsx",
-  "_overrides": {
-    "language_select_za": "@fields._deployment_name == \"plh_za\"",
-    "language_select_tz": "@fields._deployment_name == \"plh_tz\""
-  }
+  "_xlsxPath": "Copy of language.xlsx"
 }

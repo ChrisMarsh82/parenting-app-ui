@@ -8,9 +8,7 @@
       "name": "text",
       "value": "@global.parent_app has downloaded an update. Please restart the app to finish installation.",
       "_translations": {
-        "value": {
-          "tz_sw": true
-        }
+        "value": {}
       },
       "_nested_name": "text",
       "_dynamicFields": {
@@ -34,9 +32,7 @@
       "name": "button",
       "value": "Restart",
       "_translations": {
-        "value": {
-          "tz_sw": true
-        }
+        "value": {}
       },
       "action_list": [
         {
@@ -52,5 +48,5 @@
       "_nested_name": "button"
     }
   ],
-  "_xlsxPath": "global/core_templates/app_update.xlsx"
+  "_xlsxPath": "app_update.xlsx"
 }

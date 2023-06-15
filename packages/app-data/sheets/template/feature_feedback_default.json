@@ -54,14 +54,7 @@
           "name": "button_submit",
           "value": "Submit",
           "_translations": {
-            "value": {
-              "tz_sw": true,
-              "za_af": true,
-              "za_st": true,
-              "za_tn": true,
-              "za_xh": true,
-              "za_zu": true
-            }
+            "value": {}
           },
           "action_list": [
             {
@@ -121,5 +114,5 @@
       "_nested_name": "dg_buttons"
     }
   ],
-  "_xlsxPath": "global/core_templates/feature_feedback.xlsx"
+  "_xlsxPath": "Copy of feedback.xlsx"
 }
